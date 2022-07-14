@@ -1,0 +1,17 @@
+// 백준 3단계 8393번 합
+
+#include <stdio.h>
+
+int main() {
+	int T ;
+    int sum = 0;
+	scanf("%d",&T);
+
+    for(int i = 1;i<T+1;i++){
+        sum = sum + i;
+    }
+
+        printf("%d",sum);
+
+	return 0;
+}
