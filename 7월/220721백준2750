@@ -1,0 +1,12 @@
+n = int(input()) # 수의 개수 입력받기
+ln = [] # 리스트 생성
+
+for i in range(n) : # 개수만큼 입력받기 위한 반복문 생성
+  s = int(input()) # 입력받고
+  ln.append(s) # 바로 리스트 원소로 저장
+
+ln.sort() # 리스트 오름차순 정리
+
+# 오름차순으로 정렬된 리스트 하나씩 출력되도록 반복문 생성
+for i in range(n) :
+  print(ln[i])
