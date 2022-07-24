@@ -1,0 +1,11 @@
+k = int(input())
+lek = []
+
+for i in range (0, k) :
+    a = int(input())
+    if a == 0 :
+        lek.pop()
+    else :
+        lek.append(a)
+        
+print (sum(lek))
