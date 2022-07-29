@@ -1,0 +1,13 @@
+# 1157. 단어 공부
+n = input().upper()
+nset = list(set(n)) # set으로 받아서 먼저 중복값 제거 후 리스트화
+
+cnt = [] # 문자 갯수를 요소로 받는 리스트 생성
+
+for i in nset : # 입력한 문자 안에 리스트 요소 개수 세고, 요소화
+    cnt.append(n.count(i))
+    
+if cnt.count(max(cnt)) > 1 :
+    print("?") # 최댓값이 2개 이상
+else :
+    print(nset[cnt.index(max(cnt))])
