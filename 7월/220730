@@ -1,0 +1,8 @@
+a = input()
+alpha = ['c=', 'c-', 'dz=', 'd-', 'lj', 'nj', 's=', 'z='] # 크로아티아 알파벳 모음
+
+for i in alpha : # i는 크로아티아 알파벳 범위에 해당
+  if i in a : # 만약 크로아티아 알파벳이 입력된 것에 있다면
+    a = a.replace(i, '*') # 크로아티아 알파벳은 *로 대치
+
+print(len(a)) # 글자 수 세기
