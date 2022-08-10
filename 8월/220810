@@ -1,0 +1,7 @@
+a = [1, 1, 2, 2, 2, 8]
+b = list(map(int,input().split()))
+
+x = ([ai - bi for ai, bi in zip(a, b)])
+
+for i in range (len(a)) :
+    print(x[i], end=" ")
