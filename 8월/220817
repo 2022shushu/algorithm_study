@@ -1,0 +1,9 @@
+while True :
+  x, y, z = map(int, input().split())
+  if x + y + z == 0 :
+    break
+  else :
+    if pow(x,2) == pow(y,2) + pow(z,2) or pow(y,2) == pow(x,2) + pow(z,2) or pow(z,2) == pow(x,2) + pow(y,2) :
+      print("right")
+    else :
+      print("wrong")
