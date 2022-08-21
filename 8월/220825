@@ -1,0 +1,11 @@
+x = []
+
+for i in range(int(input())) :
+  x.append(input())
+
+x = list(set(x)) # 중복제거 이후 정렬을 위한 리스트화
+x.sort(key=len) # 리스트 글자수에 따른 정렬
+x.sort() # 글자 정렬
+
+for i in x :
+  print(i)
