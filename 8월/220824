@@ -1,0 +1,10 @@
+nums = []
+
+for i in range (int(input())) :
+  x, y = map(int, input().split())
+  nums.append((x, y))
+
+nums.sort()
+
+for i in range (len(nums)) :
+  print(nums[i][0],nums[i][1])
