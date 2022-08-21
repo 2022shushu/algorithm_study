@@ -1,0 +1,8 @@
+s = input()
+new_s = set(s)
+
+for i in range(len(s)) :
+  for j in range(len(s)) :
+    new_s.add(s[i : j+1])
+
+print(len(new_s)-1)
