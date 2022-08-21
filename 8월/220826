@@ -1,0 +1,12 @@
+import math
+def lcm(a, b) :
+    return (a*b) // math.gcd(a, b)
+
+number = []
+
+for i in range(int(input())) :
+    a, b = map(int, input().split())
+    number.append((a, b))
+
+for i in range(len(number)) :
+    print(lcm(number[i][0],number[i][1]))
