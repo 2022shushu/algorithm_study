@@ -1,0 +1,12 @@
+n = int(input())
+lst = map(int, input().split())
+lst = list(lst)
+lst.sort()
+
+x = 0
+
+for i in range (len(lst)) :
+  a = lst[i] * (len(lst) - i)
+  x = x + a
+
+print(x)
