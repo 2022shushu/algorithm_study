@@ -1,0 +1,15 @@
+import sys
+n, k = map(int, input().split())
+
+s = set()
+for i in range(n) :
+  s.add(sys.stdin.readline())
+
+cnt = 0
+
+for i in range (k) :
+  new_s = sys.stdin.readline()
+  if new_s in s :
+    cnt = cnt +1
+
+print(cnt)
