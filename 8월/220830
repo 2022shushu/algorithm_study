@@ -1,0 +1,11 @@
+from fractions import Fraction
+
+n = int(input())
+a = list(map(int, input().split()))
+
+for i in range (1, n) :
+  if a[0] % a[i] == 0 :
+    how = round(a[0]/a[i])
+    print(str(how) + "/1")
+  else :
+    print(Fraction(a[0], a[i]))ㅍ
