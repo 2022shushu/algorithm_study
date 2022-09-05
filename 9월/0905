@@ -1,3 +1,4 @@
+# 2935 소음
 a = int(input())
 b = input()
 c = int(input())
@@ -6,3 +7,7 @@ if b == "*" :
     print(a*c)
 else :
     print(a+c)
+
+# 10699 오늘 날짜
+from datetime import datetime
+print(datetime.today().date())
