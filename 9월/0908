@@ -1,0 +1,9 @@
+v = int(input())
+sco = list(input())
+
+if sco.count("A") > sco.count("B") :
+    print("A")
+elif sco.count("A") < sco.count("B") :
+    print("B")
+else :
+    print("Tie")
