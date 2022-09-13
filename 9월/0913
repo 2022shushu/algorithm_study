@@ -1,0 +1,19 @@
+# 10886
+s = []
+
+for i in range (int(input())) :
+    s.append(int(input()))
+
+if s.count(1) < s.count(0) :
+    print("Junhee is not cute!")
+else :
+    print("Junhee is cute!")
+
+# 10988
+w = list(input())
+s = list(reversed(w))
+
+if w == s :
+    print(1)
+else :
+    print(0)
