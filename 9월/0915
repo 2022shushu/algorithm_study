@@ -1,0 +1,13 @@
+tem = []
+sum_tem = []
+n, k = map(int, input().split())
+tem = map(int, input().split())
+tem = list(tem)
+
+for i in range (n - k + 1) :
+    sum = 0
+    for j in range (i, i+k) :
+        sum = sum + tem[j]
+    sum_tem.append(sum)
+
+print(max(sum_tem))
