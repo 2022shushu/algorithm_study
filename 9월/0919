@@ -1,0 +1,27 @@
+# 10817
+a, b, c = map(int,input().split())
+x = [a, b, c]
+x.sort(reverse = True)
+print(x[1])
+
+# 2476
+suli = []
+
+for i in range (int(input())) :
+    a, b, c = map(int, input().split())
+    x = [a, b, c]
+    x.sort()
+    if a == b == c :
+        su = 10000 + (a*1000)
+    elif a == b and b != c :
+        su = 1000 + (b*100)
+    elif a == c and b != c :
+        su = 1000 + (a*100)
+    elif b == c and a != c :
+        su = 1000 + (b*100)
+    else :
+        su = x[2]*100
+    suli.append(su)
+    
+suli.sort()
+print(max(suli))
