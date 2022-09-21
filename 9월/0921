@@ -1,0 +1,21 @@
+a, b, c = map(int, input().split())
+d = int(input())
+
+x = d//3600
+y = (d-(x*3600))//60
+z = d%60
+
+h = a+x
+m = b+y
+s = c+z
+
+if s >= 60 :
+    m = m+(s//60)
+    s = s-60
+if m >= 60 :
+    h = h+(m//60)
+    m = m-60
+if h >= 24 :
+    h = h%24
+    
+print(h, m, s)
