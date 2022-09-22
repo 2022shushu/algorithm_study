@@ -1,0 +1,23 @@
+g, b = 0, 0
+y = []
+z = []
+
+for i in range (int(input())) :
+    x = list(input())
+    g = x.count("G") + x.count("g")
+    b = x.count("B") + x.count("b")
+    
+    s = "".join(x)
+    y.append(s)
+    
+    if g > b :
+        z.append("is GOOD")
+    elif g < b :
+        z.append("is A BADDY")
+    else :
+        z.append("is NEUTRAL")
+    
+    g, b = 0, 0
+
+for i in range (len(y)) :
+    print(y[i], z[i])
