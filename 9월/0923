@@ -1,0 +1,18 @@
+a, b, c = 300, 60, 10
+an, bn, cn = 0, 0, 0
+
+t = int(input())
+if t<10 or t%10 !=0 :
+    print(-1)
+else :
+    if t >= 300 :
+        an = t//300
+        t = t - (an*300)
+        bn = t//60
+        t = t - (bn*60)
+        cn = t//10
+    else :
+        bn = t//60
+        t = t - (bn*60)
+        cn = t//10
+    print(an, bn, cn)
