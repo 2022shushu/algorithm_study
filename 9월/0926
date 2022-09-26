@@ -1,0 +1,12 @@
+x = []
+for i in range (int(input())) :
+    r, e, c = map(int,input().split())
+    if r > e-c :
+        x.append("do not advertise")
+    elif r == e-c :
+        x.append("does not matter")
+    else :
+        x.append("advertise")
+
+for i in range (len(x)) :
+    print(x[i])
