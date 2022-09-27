@@ -1,0 +1,10 @@
+word = list(input())
+
+new_word = []
+new_word.append(word[0].upper())
+
+for i in range (len(word)) :
+    if word[i] == '-' :
+        new_word.append(word[i+1].upper())
+
+print(''.join(new_word))
