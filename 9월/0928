@@ -1,0 +1,10 @@
+import sys
+arr = [0]*10001 # 입력으로 받을 수 있는 10,000개 배열 만들기
+
+for i in range (int(sys.stdin.readline())) :
+    arr[int(sys.stdin.readline())] += 1
+  
+for i in range(10001) :
+    if arr[i] != 0 : # 0이 아니면
+      for j in range (arr[i]) : # 해당 숫자만큼 인덱스 출력
+        print(i)
