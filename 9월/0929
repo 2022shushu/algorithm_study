@@ -1,0 +1,20 @@
+ql = []
+dl = []
+kl = []
+rl = []
+
+for i in range (int(input())) :
+  n = int(input())
+  n = n
+
+  q = n // 25
+  d = (n - (q * 25)) // 10
+  k = (n - (q * 25) - (d * 10)) // 5
+  r = (n - (q * 25) - (d * 10) - (k * 5)) 
+  ql.append(int(q))
+  dl.append(int(d))
+  kl.append(int(k))
+  rl.append(int(r))
+
+for i in range (len(ql)) :
+  print(ql[i], dl[i], kl[i], rl[i])
