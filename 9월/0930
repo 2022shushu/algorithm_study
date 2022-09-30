@@ -1,0 +1,16 @@
+dz = [] # 수업시간
+nz = []
+
+for i in range (int(input())) :
+    dz.append(int(input()))
+    n = 0
+    while True :
+        if ((n+1)*(n+1)) + n < dz[i] :
+            n = n + 1
+        else :
+            break
+    
+    nz.append(n)
+
+for i in range (len(nz)) :
+    print(nz[i])
